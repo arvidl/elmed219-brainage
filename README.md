@@ -1,5 +1,6 @@
-# mmiv-kaggle-brainage
-MMIV HealthHack 2019 - the BrainAge Challenge
+# MMIV HealthHack 2019 - the BrainAge Challenge
+
+[mmiv-kaggle-brainage](https://github.com/arvidl/mmiv-kaggle-brainage/blob/master/README.md )
 
 ## Overview
 
