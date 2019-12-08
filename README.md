@@ -1,5 +1,34 @@
 # mmiv-kaggle-brainage
-MMIV HealthHack 2019 - BrainAge Challenge
+MMIV HealthHack 2019 - the BrainAge Challenge
+
+## Overview
+
+### The MMIV 2019 BrainAge Challenge
+
+Part of the MMIV 2019 Conference: [Convergence of medical data science for improved patient care](https://mmiv.no/conference), December 9–11, 2019
+
+The age of a patient is typically easy to obtain - just ask the person when they come in. So why do we want to post a brain-age challenge? Why estimate a person’s age based on images and measures from the brain? The reason is that knowledge about the correlation between actual age and age as calculated from the image data can give us insight into normal aging processes.
+
+Knowing how a brain changes throughout adolescence and old age can tell us what each of us has to expect. Once we have an understanding of that process in healthy individuals we can look for cases in which our assumption is wrong. Say our model is - on average - able to tell us the true age given the brain images, what happens if we encounter a mismatch? Can we highlight that case and ask if this particular participant has something else going on? Maybe he is 80 years old but looks like a 40 year old person given the image data. How did the participant stay that young?
+
+These and other questions can be posed when we have a good understanding of the normal aging process as captured by medical structured imaging. Hopefully you can help us to identify our surprising participants.
+
+### Prerequisites
+
+_You will work in teams. It is sufficient if one team member has the following background knowledge:_
+
+The first part of the challenge will be given as a Kaggle InClass competition. You will need a (free) [Kaggle](https://www.kaggle.com) account. See here a quick intro to Kaggle: https://www.youtube.com/watch?v=TNzDMOg_zsw.
+
+Some basic knowledge of R, Python + Pandas or another language for statistical computing will be required. If you don’t know any of these but are still eager to join the challenge, take a look at the short [Introduction to machine learning](https://www.kaggle.com/learn/intro-to-machine-learning) and [Pandas](https://www.kaggle.com/learn/pandas) courses on Kaggle. These will be sufficient to get you started.
+
+### References
+
+Here are some recent discussions and reviews of brain age research:
+
+ - Cole, J.H. and Franke, K. Predicting Age Using Neuroimaging: Innovative Brain Ageing Biomarkers, TINS, 2017, https://www.sciencedirect.com/science/article/pii/S016622361730187X
+ - Bijsterbosch, J. How old is your brain? Nature Neuroscience, 2019, https://www.nature.com/articles/s41593-019-0478-0
+ - Franke, K. and Gaser C. Ten Years of BrainAGE as a Neuroimaging Biomarker of Brain Aging: What Insights Have We Gained? Frontiers in Neurology, 2019, https://www.frontiersin.org/articles/10.3389/fneur.2019.00789/full
+
 
 
 ## Data description
