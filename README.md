@@ -1,4 +1,4 @@
-# MMIV HealthHack 2019 - the BrainAge Challenge
+# MMIV HealthHack 2019 - The BrainAge Challenge
 
 [mmiv-kaggle-brainage](https://github.com/arvidl/mmiv-kaggle-brainage/blob/master/README.md )
 
@@ -57,3 +57,12 @@ The feature names are a bit cryptic as they are from Freesurfer (6.0), which you
  - `test.csv` - test data. Same features as in the training data, except no labels.
  - `sampleSubmission.csv` - an example of a submission file following the format accepted by Kaggle. You can use this to generate your own submission.
  - `SLIM_longitudinal_info.csv` - longitudinal data. Outputs from 18 subjects scanned three times.
+
+
+## Applications
+
+### Calculating the brain age gap
+
+![brain_age_gap](./assets/brain_age_gap_figure.png)
+
+Structural brain imaging features from 35,474 healthy individuals aged 3–89 years were used to train a machine-learning algorithm to determine normal trajectories of brain aging. The algorithm was then used to predict brain ages of 5,788 individuals with various brain disorders and an additional 4,353 matched healthy individuals who were not included in the training dataset. The brain age gap is defined as the difference between the brain-age prediction from the algorithm and the person’s real age. This brain age gap was found to be higher in patients with brain disorders compared with healthy individuals and was linked to genetics. (from https://doi.org/10.1038/s41593-019-0478-0)
