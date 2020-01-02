@@ -1,12 +1,12 @@
-# MMIV HealthHack 2019 - The BrainAge Challenge
+# ELMED219 - The BrainAge Challenge 2020
 
-[mmiv-kaggle-brainage](https://github.com/arvidl/mmiv-kaggle-brainage/blob/master/README.md )
+[elmed219-brainage](https://github.com/arvidl/elmed219-brainage/blob/master/README.md)
 
 ## Overview
 
-### The MMIV 2019 BrainAge Challenge
+### The ELMED219 BrainAge Challenge
 
-Part of the MMIV 2019 Conference: [Convergence of medical data science for improved patient care](https://mmiv.no/conference), December 9–11, 2019
+Part of the [ELMED219](https://www.uib.no/en/course/ELMED219) course *Artificial intelligence and computational medicine*
 
 The age of a patient is typically easy to obtain - just ask the person when they come in. So why do we want to post a brain-age challenge? Why estimate a person’s age based on images and measures from the brain? The reason is that knowledge about the correlation between actual age and age as calculated from the image data can give us insight into normal aging processes.
 
@@ -18,7 +18,7 @@ These and other questions can be posed when we have a good understanding of the 
 
 _You will work in teams. It is sufficient if one team member has the following background knowledge:_
 
-The first part of the challenge will be given as a Kaggle InClass competition. You will need a (free) [Kaggle](https://www.kaggle.com) account. See here a quick intro to Kaggle: https://www.youtube.com/watch?v=TNzDMOg_zsw.
+The first part of the challenge will be given as a Kaggle InClass competition ([here](https://inclass.kaggle.com/c/elmed219-2020)). You will need a (free) [Kaggle](https://www.kaggle.com) account. See here a quick intro to Kaggle: https://www.youtube.com/watch?v=TNzDMOg_zsw.
 
 Some basic knowledge of R, Python + Pandas or another language for statistical computing will be required. If you don’t know any of these but are still eager to join the challenge, take a look at the short [Introduction to machine learning](https://www.kaggle.com/learn/intro-to-machine-learning) and [Pandas](https://www.kaggle.com/learn/pandas) courses on Kaggle. These will be sufficient to get you started.
 
@@ -34,11 +34,11 @@ Here are some recent discussions and reviews of brain age research:
 
 ## Data description
 
-From T1-weighted MR images of 1553 subjects we have calculated 143 features. These are collected in two CSV files: train.csv and test.csv (except those kept as a hidden test set used for the "Private leaderboard" score).
+From T1-weighted MR images of 2499 subjects (age 48.0±21.7, min 17, max 85) we have calculated 143 features. These are collected in two CSV files: train.csv and test.csv (except those kept as a hidden test set used for the "Private leaderboard" score).
 
 Your first task is to predict the age of the subjects in the test set.
 
-For Part 2 of the challenge, where you're tasked with telling an interesting story about your data exploration and model results, you will likely have use for additional information about the subjects, including raw images. See here:
+For Part 2 of the challenge, where you're tasked with telling an interesting story about your data exploration and model results, you will likely have use for additional information about the subjects, including raw images. See here for info about the SLIM, SALD, IXI and Calgary-Campinas subjects:
 
  - [SLIM](http://fcon_1000.projects.nitrc.org/indi/retro/southwestuni_qiu_index.html)
 
@@ -48,9 +48,17 @@ For Part 2 of the challenge, where you're tasked with telling an interesting sto
 
  - [Calgary-Campinas](http://brain-development.org/ixi-dataset)
 
-In the file `SLIM_longitudinal_info.csv` you will find data from 18 subjects scanned three times each, processed using the Freesurfer 6.0 longitudinal stream. This can be used to check robustness of your brainage models, and can be part of your "Part 2 story".
 
 The feature names are a bit cryptic as they are from Freesurfer (6.0), which you may or may not be familiar with. We will give you a quick intro to Freesurfer during the challenge.
+
+In the file `SLIM_longitudinal_info.csv` you will find data from 18 subjects scanned three times each. This can be used to check robustness of your brainage models, and can be part of your "Part 2 story".
+
+You may also want to explore the raw data for your Part 2 work. You'll find all the images through the links above. Here are links to a single subject's images (anatomical and functional) and the corresponding Freesurfer 6.0 outputs. Perhaps you can make some nice visualizations?
+
+- [SALD-sub-031529.zip](https://www.dropbox.com/s/czdtdqr5n2zwi9c/SALD-sub-031529.zip?dl=1)
+
+- [SALD-FS60-sub-031529.zip](https://www.dropbox.com/s/zo41efu2c57ybfr/SALD-FS60-sub-031529.zip?dl=1)
+
 
 ### Description of the files
  - `train.csv` - training data. Consists of subject ID, some basic subject information, morphometric data and labels (age)
