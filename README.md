@@ -16,6 +16,34 @@ These and other questions can be posed when we have a good understanding of the 
 
 ### Prerequisites
 
+
+#### Install software
+
+See [`setup.md`](https://github.com/MMIV-ML/ELMED219-2020/blob/master/setup.md) and
+[`environment.yml`](https://github.com/MMIV-ML/ELMED219-2020/blob/master/environment.yml) from the ELMED2019-2020 course GitHub repository.<br>
+Install the `Atom` editor from https://atom.io to edit and display .md files etc.
+
+You will be working in the `elmed219`virtual environment, i.e. <br>
+`conda activate elmed219`
+
+**Possible additional installations:**
+
+To install [umap](https://umap-learn.readthedocs.io/en/latest):<br>
+`conda install -c conda-forge umap-learn`
+
+To install [fastai](https://docs.fast.ai):
+`conda install pytorch torchvision cudatoolkit=10.1 -c pytorch`<br>
+(or if not NIVIDA / CUDA 10.1):<br>
+`conda install pytorch torchvision -c pytorch` <br>
+`conda install -c fastai fastai`
+
+To install [xgboost](https://xgboost.readthedocs.io/en/latest):<br>
+`pip install xgboost`
+
+#### Check installation
+
+In the `nbs` directory, run `0.0-test_setup.ipynb`
+
 _You will work in teams. It is sufficient if one team member has the following background knowledge:_
 
 The first part of the challenge will be given as a Kaggle InClass competition ([here](https://inclass.kaggle.com/c/elmed219-2020)). You will need a (free) [Kaggle](https://www.kaggle.com) account. See here a quick intro to Kaggle: https://www.youtube.com/watch?v=TNzDMOg_zsw.
